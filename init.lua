@@ -1,4 +1,5 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
+getgenv().uzuLoaded = true
 task.wait(3)
 print("loaded")
 
@@ -8,7 +9,6 @@ getgenv().getGithubFile = function(file)
 end
 
 getGithubFile("global.lua")
-getgenv().uzuLoaded = true
 
 player.Idled:Connect(function()
     virtualUser:CaptureController()
