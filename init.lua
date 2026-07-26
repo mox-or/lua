@@ -8,6 +8,7 @@ getgenv().getGithubFile = function(file)
 end
 
 getGithubFile("global.lua")
+getgenv().uzuLoaded = true
 
 player.Idled:Connect(function()
     virtualUser:CaptureController()
