@@ -1,4 +1,6 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
+task.wait(3)
+print("loaded")
 
 getgenv().getGithubFile = function(file)
     print(file)
