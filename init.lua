@@ -1,5 +1,4 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
-getgenv().uzuLoaded = true
 task.wait(3)
 print("loaded")
 
@@ -24,3 +23,4 @@ if not name then return end
 
 local file = ("list/%s/script.lua"):format(name)
 getGithubFile(file)
+getgenv().uzuLoaded = true
